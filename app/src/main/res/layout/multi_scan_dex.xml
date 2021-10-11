@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="@color/background2">
+
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/background2">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="20dp"
+					android:text="No. Waybill"
+					android:textColor="@color/font"/>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="5dp"
+					android:layout_gravity="center_horizontal">
+					<Button
+						android:id="@+id/btnScan"
+						android:layout_width="wrap_content"
+						android:layout_height="45dp"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentRight="true"
+						android:layout_marginLeft="9dp"
+						android:layout_marginRight="9dp"
+						android:text="Scan" />
+					<EditText
+						android:id="@+id/waybill"
+						android:layout_width="fill_parent"
+						android:layout_height="30dp"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentTop="true"
+						android:layout_marginLeft="9dp"
+						android:layout_marginRight="9dp"
+						android:inputType="phone"
+						android:background="@color/color_input"
+						android:textColor="@color/black_alpha"/>
+				</LinearLayout>
+
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="5dp"
+					android:text="Recipient Type"
+					android:textColor="@color/font"/>
+
+				<Spinner
+					android:id="@+id/spinner"
+					android:layout_width="fill_parent"
+					android:layout_height="40dp"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="5dp"
+					android:drawSelectorOnTop="true"
+					android:background="@android:drawable/btn_dropdown"/>
+
+
+				<!-- <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="141dp"
+                    android:text="Recipient" /> -->
+
+				<!-- <EditText
+                   android:id="@+id/penerima"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginLeft="9dp"
+                   android:layout_marginTop="161dp"
+                   android:layout_marginRight="9dp"/> -->
+
+				<!-- <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="201dp"
+                    android:text="Telpon"/> -->
+
+				<!-- <EditText
+                   android:id="@+id/telp"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginLeft="9dp"
+                   android:layout_marginTop="221dp"
+                   android:layout_marginRight="9dp"
+                   android:inputType="number" />         -->
+
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="5dp"
+					android:text="Remark"
+					android:textColor="@color/font"/>
+
+				<EditText
+					android:id="@+id/keterangan"
+					android:layout_width="fill_parent"
+					android:layout_height="30dp"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginRight="9dp"
+					android:background="@color/color_input"
+					android:textColor="@color/black_alpha"/>
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="5dp"
+					android:text="Foto"
+					android:textColor="@color/font"/>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal">
+					<ImageView
+						android:id="@+id/image"
+						android:layout_marginLeft="9dp"
+						android:layout_width="200dp"
+						android:layout_height="150dp"
+						android:layout_gravity="center"
+						android:layout_marginTop="5dp"
+						android:src="@drawable/no_image" />
+				</LinearLayout>
+
+				<ListView
+					android:id="@+id/ListViewWaybill"
+					android:layout_width="wrap_content"
+					android:layout_height="234dp"
+					android:visibility="gone">
+				</ListView>
+
+				<TextView
+					android:id="@+id/txt_Response_Code"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="9dp"
+					android:layout_marginTop="5dp"
+					android:text="0"
+					android:visibility="gone"/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal">
+
+					<Button
+						android:id="@+id/btnFoto"
+						android:layout_marginLeft="9dp"
+						android:layout_width="200dp"
+						android:layout_marginTop="5dp"
+						android:layout_height="wrap_content"
+						android:text="Take Foto" />
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal">
+
+					<Button
+						android:id="@+id/btnProses"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Submit" />
+
+					<Button
+						android:id="@+id/btnBersih"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Reset" />
+					<!-- <Button -->
+					<!--     android:id="@+id/btnAdd" -->
+					<!--     android:layout_width="wrap_content" -->
+					<!--     android:layout_height="wrap_content" -->
+					<!--     android:text="Add to list" /> -->
+
+					<Button
+						android:id="@+id/btnKeluar"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Close" />
+				</LinearLayout>
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text=""
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="9dp"
+					android:id="@+id/error"/>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/footer_1"
+						android:textColor="@color/font"/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/footer_2"
+						android:textColor="@color/font"/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginBottom="27dp">
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/footer_3"
+						android:textColor="@color/font"/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<ProgressBar
+						android:id="@+id/progressBar1"
+						android:layout_width="320dp"
+						android:layout_height="wrap_content"
+						android:layout_centerHorizontal="true"
+						style="?android:attr/progressBarStyleHorizontal"/>
+
+					<TextView
+						android:id="@+id/txt_progress"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="4dp"
+						android:layout_marginRight="4dp"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:text=" %"
+						android:textSize="12sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+	<FrameLayout
+		android:id="@+id/fl_progress"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:focusable="true"
+		android:visibility="gone">
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+	</FrameLayout>
+</FrameLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="Please select menu" />
+	<Button
+        android:id="@+id/btnhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Setup Host" />        
+        
+    <Button
+        android:id="@+id/btndata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Download Data" />
+
+ 	<Button
+        android:id="@+id/btnupl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Upload Data" />
+        
+ 	<Button
+        android:id="@+id/btnmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Goto Main Menu"/>
+  	<Button
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Logout" />   
+ 	<Button
+        android:id="@+id/btnexit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Exit App" />
+   <Button
+        android:id="@+id/getgps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Get Position" />     
+    <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="CLEAR MOBILE SYSTEM"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Copyright © 2014 - IT ATRI-XPRESS"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="All Rights Reserved"/>
+    </LinearLayout>
+     <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+    		android:id="@+id/showurl"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+    </LinearLayout>   
+   <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+    		android:id="@+id/showgps"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+    </LinearLayout>        
+</LinearLayout>

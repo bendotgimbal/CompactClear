@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Buka Scan AWB -->
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="10dp"
+        android:background="@layout/card_background_frame"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/judul_assigment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:text="Nomor Assigment : " />
+
+        <TextView
+            android:id="@+id/no_assigment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:text="isi" />
+        
+    </RelativeLayout>
+    <!-- Tutup Scan AWB -->
+
+</LinearLayout>

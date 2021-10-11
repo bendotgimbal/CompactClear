@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+  	<LinearLayout
+  	 	android:layout_width="wrap_content"
+    	android:layout_height="358dp"
+    	android:layout_marginLeft="9dp"
+    	android:layout_marginRight="9dp" >
+ 		<ListView
+ 		    android:id="@+id/mylist"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent" >
+		</ListView>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+  		android:layout_height="45dp"
+  		android:orientation="horizontal"
+  		android:layout_marginTop="9dp"
+  		android:layout_marginLeft="9dp"
+    	android:layout_marginRight="9dp">
+ 	<Button
+            android:id="@+id/btnRefresh"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Refresh" />
+ 	<Button
+            android:id="@+id/btnKeluar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Close" />
+ 	
+ 		</LinearLayout>
+ 	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="CLEAR MOBILE SYSTEM"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Copyright © 2015 - IT ATRI-XPRESS"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="All Rights Reserved"/>
+    </LinearLayout>
+ </LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="Please select menu" />
+	<Button
+        android:id="@+id/btnship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Courier's Runsheet" />        
+	<Button
+        android:id="@+id/btnalfa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Alfamart Drop Store" />        
+   <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Close" />     
+    <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="CLEAR MOBILE SYSTEM"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Copyright © 2014 - IT ATRI-XPRESS"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="All Rights Reserved"/>
+    </LinearLayout>
+     <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+    		android:id="@+id/showurl"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+    </LinearLayout>   
+   <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+    		android:id="@+id/showgps"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+    </LinearLayout>        
+</LinearLayout>

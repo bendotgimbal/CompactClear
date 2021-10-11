@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:id="@+id/po"
+        android:text="Nomor PO :" 
+        android:textColor="@color/font"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="Please enter Air Waybill" 
+        android:textColor="@color/font"/>
+        <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:layout_marginTop="5dp"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+		    <Button
+			        android:id="@+id/btnscan"
+			        android:layout_width="60dp"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginLeft="18dp"
+			        android:layout_marginRight="9dp"
+			        android:text="Scan" />
+		 	<EditText
+		 		android:id="@+id/waybill"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginRight="24dp"
+		        android:inputType="phone"
+		        android:text="" />        
+	 </LinearLayout>
+
+        
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:orientation="horizontal" >
+	  
+	    <Button
+	        android:id="@+id/btnadd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="9dp"
+	        android:layout_marginRight="9dp"
+	        android:text="Add to list" />
+	</LinearLayout>
+       
+<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+
+     <ListView
+         android:id="@+id/mainListView"
+         android:layout_width="wrap_content"
+         android:layout_height="234dp" >
+  
+    </ListView>
+    <ListView
+         android:id="@+id/mainListView2"
+         android:layout_width="wrap_content"
+         android:layout_height="234dp" >
+  
+    </ListView>
+</LinearLayout>  
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	<Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Submit" />         
+ 	<Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Close" />
+ 	</LinearLayout>       
+    <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_1"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_2"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_3"
+        	android:textColor="@color/font"/>
+    </LinearLayout>
+        
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <!-- Buka List ADS -->
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:background="@layout/card_background_frame"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/judul_no_awb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:text="@string/str_awb_ads_detail" />
+        
+        <TextView
+            android:id="@+id/txt_status_assigment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:text="status"
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/txt_Response_Code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="321dp"
+            android:text="0"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/judul_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:text="@string/str_status_ads_detail" />
+        
+        <TextView
+            android:id="@+id/judul_service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:text="@string/str_service" />
+        
+        <TextView
+            android:id="@+id/judul_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:text="@string/str_type_ads_detail" />
+        
+        <TextView
+            android:id="@+id/txt_status_assigment_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cell_shape"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:text="status"
+            android:visibility="gone"/>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@layout/card_background_listview_isi"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/listviews_ads_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+            
+            <CheckBox
+                android:id="@+id/checkbox_awb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#84827e"
+                android:textSize="19dp"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/status_ChangedCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:background="@layout/card_background_listview_isi"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/add_LV_awb_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+
+            <EditText
+                android:id="@+id/add_ET_awb_list"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- Tutup List ADS -->
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/jdl_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:inputType="phone"
+                android:text="@string/str_kode_alfatrex_detail"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/jdl_pincode_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                android:inputType="phone"
+                android:text="@string/str_kode_alfatrex_detail_2"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="124dp"
+            android:layout_marginRight="24dp"
+            android:inputType="phone"
+            android:text="" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="wrap_content"
+            android:layout_height="234dp"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+    
+    <!-- Buka Button -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Refresh"
+            android:visibility="gone"/>
+        
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="OnFinish"
+            android:text="Finish"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/btnFinishTester"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="OnFinish"
+            android:text="Finish"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/btnFinishTesting"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="OnFinish"
+            android:text="Finish" />
+        
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="OnNextScan"
+            android:text="Scan" />
+
+        <Button
+            android:id="@+id/btnKeluar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Close" />
+    </LinearLayout>
+    <!-- Tutup Button -->
+    
+    <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_1"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_2"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_3"
+        	android:textColor="@color/font"/>
+    </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</FrameLayout>

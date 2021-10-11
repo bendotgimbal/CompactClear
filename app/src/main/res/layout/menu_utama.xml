@@ -1,0 +1,317 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background">
+	<!-- <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"> -->    
+		<LinearLayout 
+    	 android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal">
+<!-- 	    	<LinearLayout -->
+<!--             android:layout_marginTop="18dp" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_horizontal"> -->
+			
+<!-- 			<Button -->
+<!--                 android:id="@+id/btnpickup" -->
+<!--                 style="@style/DashboardButton" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:drawableTop="@drawable/pickup_booking_a" -->
+<!--                 android:text="@string/pickup_booking"/> -->
+			
+
+
+<!--             <Button -->
+<!--                 android:id="@+id/btnpupmulti" -->
+<!--                 style="@style/DashboardButton" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:layout_marginLeft="9dp" -->
+<!--                 android:drawableTop="@drawable/multi_pickup_a" -->
+<!--                 android:text="@string/multi_pup"/> -->
+<!--         </LinearLayout>     -->
+    
+
+		<LinearLayout
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone">
+
+                        <Button
+                android:id="@+id/btnpup"
+                style="@style/DashboardButton"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pup_a"
+                android:text="@string/pup"/>
+
+
+      
+            <Button
+                android:id="@+id/btnpod"
+                style="@style/DashboardButton"
+                android:layout_weight="1"
+                android:layout_marginLeft="9dp"
+                android:drawableTop="@drawable/pod_a"
+                android:text="@string/pod"/>
+
+            <Button
+                android:id="@+id/btndex"
+                style="@style/DashboardButton"
+                android:layout_weight="1"
+                android:layout_marginLeft="9dp"
+                android:drawableTop="@drawable/dex_a"
+                android:text="@string/dex"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/blue_back_store"
+                android:layout_marginBottom="10dp">
+                <ListView
+                    android:id="@+id/lv_kurir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+            </LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="24dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="24dp"
+				android:layout_marginBottom="10dp"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="18dp">
+
+					<Button
+						android:id="@+id/wblist"
+						style="@style/DashboardButton"
+						android:layout_weight="1"
+						android:drawableTop="@drawable/list_wb_a"
+						android:text="@string/wbl_list"
+						android:visibility="gone" />
+
+					<Button
+						android:id="@+id/btnupload"
+						style="@style/DashboardButton"
+						android:layout_weight="1"
+						android:drawableTop="@drawable/icon_syncronize_atrex"
+						android:text="@string/sinkron" />
+					<!-- 			<Button -->
+					<!--                 android:id="@+id/btngps" -->
+					<!--                 style="@style/DashboardButton" -->
+					<!--                 android:layout_weight="1" -->
+					<!--                 android:layout_marginLeft="9dp" -->
+					<!--                 android:drawableTop="@drawable/posisi" -->
+					<!--                 android:text="@string/GetPosition"/> -->
+					<Button
+						android:id="@+id/btnscd"
+						style="@style/DashboardButton"
+						android:layout_marginLeft="9dp"
+						android:layout_weight="1"
+						android:drawableTop="@drawable/icon_setor_atrex"
+						android:text="@string/scd"
+						android:visibility="gone" />
+
+					<Button
+						android:id="@+id/btnAssignment"
+						style="@style/DashboardButton"
+						android:layout_weight="1"
+						android:drawableTop="@drawable/icon_assigment_atrex"
+						android:text="@string/assignment" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="18dp"
+					android:layout_marginBottom="27dp">
+
+					<RelativeLayout
+						android:id="@+id/badge_layout"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<RelativeLayout
+							android:id="@+id/lin_btnAlfadigital"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+							<Button
+								android:id="@+id/btnAlfadigital"
+								style="@style/DashboardButton"
+								android:layout_weight="1"
+								android:drawableTop="@drawable/icon_alfadigital"
+								android:text="@string/alfadigital" />
+						</RelativeLayout>
+						<TextView
+							android:id="@+id/tv_badge_notification"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignRight="@id/lin_btnAlfadigital"
+							android:background="@drawable/badge_circle3_item_count"
+							android:text="0"
+							android:textColor="#FFF"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:layout_gravity="center"/>
+
+					</RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/badge_layout_disable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:id="@+id/lin_btnAlfadigital_disable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btnAlfadigital_disable"
+                                style="@style/DashboardButton"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/icon_alfadigital_disable"
+                                android:text="@string/alfadigital"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/tv_badge_notification_disable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/lin_btnAlfadigital_disable"
+                            android:background="@drawable/badge_circle3_item_count"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+					<Button
+						android:id="@+id/btnlogout"
+						style="@style/DashboardButton"
+						android:layout_width="wrap_content"
+						android:drawableTop="@drawable/icon_logout_atrex"
+						android:text="@string/logout" />
+
+				</LinearLayout>
+			</LinearLayout>
+         	
+    <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_1"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_2"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_3"
+        	android:textColor="@color/font"/>
+    </LinearLayout>
+     <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+    		android:id="@+id/showurl"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="url"
+        	android:textColor="@color/font"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_version_now"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="version"
+            android:textColor="@color/font_version" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="version"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="135dp"
+        android:visibility="gone" />
+    <!-- <TextView
+        android:id="@+id/txt_version_now"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="version"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="135dp" /> -->
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="link"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="65dp"
+        android:visibility="gone" />
+       </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+     
+ <!-- </ScrollView> -->
+</FrameLayout>

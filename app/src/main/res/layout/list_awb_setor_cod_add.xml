@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_red" >
+
+	<RelativeLayout
+      	android:id="@+id/header"
+      	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+      	android:layout_alignParentTop="true"
+      	android:paddingTop="5dp"
+      	android:paddingBottom="5dp"
+      	android:background="@color/color_red">
+
+      		<TextView
+        		android:id="@+id/txt_jxlsc_pluss"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Buat Setoran COD"
+        		android:textAppearance="?android:attr/textAppearanceMedium"
+        		android:layout_marginLeft="10dp" />
+
+  	</RelativeLayout>
+  	
+	<RelativeLayout
+      	android:id="@+id/qqq"
+      	android:layout_width="fill_parent"
+      	android:layout_height="fill_parent"
+     	android:background="@layout/card_background_frame"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="35dp"
+	    android:orientation="horizontal">
+      		
+	    <TextView
+	        android:id="@+id/judul_waybillAddSetor"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/cell_shape"
+	        android:singleLine="true"
+	        android:text="@string/str_addsetorCOD_waybill"
+	        android:textColor="#333333"
+	        android:textSize="13sp" />
+	    
+	    <TextView
+	        android:id="@+id/judul_nominalAddSetor"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="150dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/cell_shape"
+	        android:singleLine="true"
+	        android:text="@string/str_addsetorCOD_nominalSetoran"
+	        android:textColor="#333333"
+	        android:textSize="13sp" />
+	    
+	    <TextView
+	        android:id="@+id/nominalAddSetorReplace"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="150dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/cell_shape"
+	        android:singleLine="true"
+	        android:text="Nominal Replace"
+	        android:textColor="#333333"
+	        android:textSize="13sp"
+	        android:visibility="gone" />
+	    
+	    <TextView
+	        android:id="@+id/nominalAddSetorReplace_Final"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="150dp"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/cell_shape"
+	        android:singleLine="true"
+	        android:text="Nominal Replace Final"
+	        android:textColor="#333333"
+	        android:textSize="13sp"
+	        android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@layout/card_background_listview_isi"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true">
+            </ListView>
+        </RelativeLayout>
+  	</RelativeLayout>
+
+	<RelativeLayout
+      	android:id="@+id/footer"
+      	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+      	android:layout_alignParentBottom="true"
+      	android:paddingTop="5dp"
+      	android:paddingBottom="5dp"
+      	android:background="@color/color_red">
+        
+	    <LinearLayout
+      		android:id="@+id/ff1"
+      		android:layout_width="fill_parent"
+     		android:layout_height="wrap_content"
+			android:paddingLeft="20dp"
+     		android:orientation="horizontal">
+      			
+	        	<TextView
+        			android:id="@+id/txt_jxlsc_total"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="Total Nilai COD : "
+        			  />
+
+	        	<TextView
+	        	    android:id="@+id/txt_jxlsc_tv"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:text=""
+	        	     />
+
+  		</LinearLayout>
+	    
+	    <LinearLayout
+      		android:id="@+id/ff2"
+      		android:layout_width="fill_parent"
+     		android:layout_height="wrap_content"
+     		android:gravity="center"
+     		android:orientation="horizontal"
+     		android:layout_below="@+id/ff1"
+     		android:layout_marginTop="10dp">
+
+      			<Button
+      			    android:id="@+id/button1"
+      			    style="?android:attr/buttonStyleSmall"
+      			    android:layout_width="90dp"
+      			    android:layout_height="35dp"
+      			    android:layout_margin="0dp"
+      			    android:text="Back" />
+      			<Button
+      			    android:id="@+id/button2"
+      			    style="?android:attr/buttonStyleSmall"
+      			    android:layout_width="90dp"
+      			    android:layout_height="35dp"
+      			    android:layout_marginLeft="10dp"
+      			    android:layout_marginRight="10dp"
+      			    android:text="Refresh" />
+      			<Button
+      			    android:id="@+id/button3"
+      			    style="?android:attr/buttonStyleSmall"
+      			    android:layout_width="90dp"
+      			    android:layout_height="35dp"
+      			    android:layout_margin="0dp"
+      			    android:text="Proses"
+      			    android:clickable="false" />
+
+  		</LinearLayout>
+  		
+	    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:background="@layout/card_background_listview_isi"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/add_LV_awb_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+            
+            <ListView
+                android:id="@+id/add_LV_nominal_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+
+            <EditText
+                android:id="@+id/add_ET_awb_list"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="gone" />
+            <EditText
+                android:id="@+id/add_ET_nominal_list"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="gone" />
+            <EditText
+                android:id="@+id/add_ET_total_nominal_cod"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/TV_total_nominal_cod_convert"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+
+  	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_marginTop="10dp"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Kode Booking " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/booking"
+	        android:text=": 121213131313131313" />
+    </LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Nama " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/nama"
+	        android:text=": Khamdan Ngazis" />
+    </LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Alamat " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/alamat"
+	        android:text=": Jl. raya Serang No 3" />
+    </LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Berat " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/berat"
+	        android:text=": 1 kg" />
+    </LinearLayout>
+     <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Dimensi " />
+	   <EditText
+	 		android:id="@+id/panjang"
+	        android:layout_width="100px"
+	        android:layout_height="70px"
+	        android:layout_marginLeft="24dp"
+	        android:inputType="phone"
+	        android:hint="P"
+	        android:text="" />
+	  <TextView
+	        android:layout_width="30px"
+	        android:layout_height="wrap_content"
+	        android:text=" X " />
+	   <EditText
+	 		android:id="@+id/lebar"
+	        android:layout_width="100px"
+	        android:layout_height="70px"
+	        android:inputType="phone"
+	        android:hint="L"
+	        android:text="" />
+	   <TextView
+	        android:layout_width="30px"
+	        android:layout_height="wrap_content"
+	        android:text=" X " />
+
+	   <EditText
+	 		android:id="@+id/tinggi"
+	        android:layout_width="100px"
+	        android:layout_height="70px"
+	        android:inputType="phone"
+	        android:hint="T"
+	        android:text="" />
+    </LinearLayout>
+
+
+     <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Berat Volume " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/volume"
+	        android:text=": 1 kg" />
+    </LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:text="Berat Tertagih " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/berat_kena"
+	        android:text=": 1 kg" />
+    </LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+    <TextView
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="Isi Paket " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:id="@+id/isipaket"
+        android:text=": Buku" />
+    </LinearLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	    <TextView
+	        android:layout_width="200px"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        
+	        android:text="Total Biaya " />
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="24dp"
+	        android:id="@+id/total"
+	        android:text=": Rp 10.000" />
+    </LinearLayout>
+
+	 <TextView
+	 	android:id="@+id/notifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:text="" />
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">	
+	
+	<Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Submit" />         
+ 	<Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Close" />
+ 	</LinearLayout>       
+    <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="CLEAR MOBILE SYSTEM"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Copyright © 2015 - IT ATRI-XPRESS"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="All Rights Reserved"/>
+    </LinearLayout>
+        
+</LinearLayout>

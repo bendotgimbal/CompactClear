@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="@color/background2">
+    
+    <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background2">
+    <LinearLayout 
+    	 android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_gravity="center_horizontal">
+
+  <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Please Login"
+        android:textColor="@color/font"/>
+        
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textColor="@color/font"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+		android:background="@color/color_input"
+		android:textColor="@color/black_alpha"
+		/>
+        
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Password" 
+        android:textColor="@color/font"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+		android:background="@color/color_input"
+		android:textColor="@color/black_alpha"/>
+
+	<TextView
+	    android:id="@+id/error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="180dp"
+        android:text="" />
+        
+ 	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="-180dp">
+    	<Button
+        	android:id="@+id/submit"
+        	android:visibility = "gone"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Login" />
+    	
+    	<Button
+        	android:id="@+id/btn_login"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Login" />
+    	
+    	<Button
+        	android:id="@+id/submit2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Login"
+        	android:visibility="gone" />
+
+    	<Button
+        	android:id="@+id/close"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/keluar"/>
+	</LinearLayout>
+	 <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_1"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_2"
+        	android:textColor="@color/font"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/footer_3"
+        	android:textColor="@color/font"/>
+    </LinearLayout>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="2dp"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/txt_FirebaseMessage"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="Firebase Message"
+				android:textColor="@color/font_version" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="2dp"
+			android:visibility="gone">
+			<TextView
+				android:id="@+id/txt_idFirebase"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="ID Firebase"
+				android:textColor="@color/font_version" />
+		</LinearLayout>
+    </LinearLayout>
+ </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_alpha">#ff000000</color>
+    <color name="white_alpha">#ffffff</color>
+    <color name="grey_alpha">#c2c2c2</color>
+    <color name="gradient_light_start">#e6e6e6</color>
+    <color name="colorCell">#e6e6e6</color>
+    <color name="orange">#f47032</color>
+    <color name="background">#f0f0f0</color>
+    <color name="background2">#e2e2e0</color>
+    <color name="font">#ff29549f</color>
+    <color name="font_version">#c2c2c2</color>
+    <color name="color_red">#e3051a</color>
+    <color name="color_blue">#1862b3</color>
+    <color name="color_input">#ffffff</color>
+    <color name="color_input2">#c2c2c2</color>
+    <color name="light_blue">#007aff</color>
+    <color name="blue_back_store">#445F97</color>
+</resources>

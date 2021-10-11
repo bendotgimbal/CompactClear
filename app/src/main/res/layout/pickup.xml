@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">    
+		<LinearLayout 
+    	 android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal">
+  
+
+		<LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+                        
+				
+
+      
+           
+        </LinearLayout>    
+        	
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="18dp" >
+	<Button
+                android:id="@+id/btnpo"
+                style="@style/DashboardButton"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/po"
+               />
+            <Button
+                android:id="@+id/btnads"
+                style="@style/DashboardButton"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ads"
+                />
+		     <Button
+                android:id="@+id/btnpup"
+                style="@style/DashboardButton"
+                android:layout_weight="1"
+                android:layout_marginLeft="9dp"
+                android:drawableTop="@drawable/pup"
+                />
+           
+        </LinearLayout>
+        
+		<LinearLayout
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+            
+
+            
+		</LinearLayout>
+         	
+    <LinearLayout 
+        android:layout_marginTop="70dp"
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="CLEAR MOBILE SYSTEM"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+		<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="Copyright © 2015 - IT ATRI-XPRESS"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="All Rights Reserved"/>
+    </LinearLayout>
+     <LinearLayout 
+		android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal"
+      	android:layout_gravity="center_horizontal">
+    	<TextView
+    		android:id="@+id/showurl"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text=""/>
+    </LinearLayout>
+       </LinearLayout>
+     
+ </ScrollView>         
+</LinearLayout>
